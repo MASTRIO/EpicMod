@@ -1,0 +1,48 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "EpicmodTab",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "epicmod_tab"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "itemGroup.tabepicmod_tab": "Epicmod"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "UnderBedrock",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "epicmod",
+    "modName": "EpicMod",
+    "version": "1.0.0",
+    "author": "hclark7, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "me.mastrio.epicmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100116710
+}
