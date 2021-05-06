@@ -9,23 +9,29 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "epicmod_tab"
+    },
+    {
+      "name": "LandWalker",
+      "type": "mob",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "land_walker"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.epicmod.land_walker_spawn_egg": "Land Walker Spawn Egg",
+      "entity.epicmod.land_walker": "Land Walker",
       "itemGroup.tabepicmod_tab": "Epicmod"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": [
-      {
-        "name": "UnderBedrock",
-        "children": []
-      }
-    ]
+    "children": []
   },
   "workspaceSettings": {
     "modid": "epicmod",
@@ -41,7 +47,8 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "modElementsPackage": "me.mastrio.epicmod",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "com.github.mastrio.epicmod",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202100116710

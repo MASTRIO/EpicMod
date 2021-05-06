@@ -15,7 +15,7 @@
  *    will be REGENERATED on each build.
  *
  */
-package me.mastrio.epicmod;
+package com.github.mastrio.epicmod;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;

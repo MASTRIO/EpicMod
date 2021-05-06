@@ -1,5 +1,5 @@
 
-package me.mastrio.epicmod.itemgroup;
+package com.github.mastrio.epicmod.itemgroup;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.block.Blocks;
 
-import me.mastrio.epicmod.EpicmodModElements;
+import com.github.mastrio.epicmod.EpicmodModElements;
 
 @EpicmodModElements.ModElement.Tag
 public class EpicmodTabItemGroup extends EpicmodModElements.ModElement {
