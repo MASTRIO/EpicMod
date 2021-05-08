@@ -81,8 +81,9 @@
   "workspaceSettings": {
     "modid": "epicmod",
     "modName": "EpicMod",
-    "version": "1.0.0",
-    "author": "hclark7, MCreator",
+    "version": "0.1.0",
+    "description": "A very cool mod because yes",
+    "author": "MASTRIO, Daredevil, Knight, Zaxpy, JacobDimSims, Lackhuys",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
