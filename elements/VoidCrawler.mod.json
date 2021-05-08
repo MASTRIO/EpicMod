@@ -2,26 +2,26 @@
   "_fv": 18,
   "_type": "mob",
   "definition": {
-    "mobName": "Land Walker",
+    "mobName": "Void Crawler",
     "mobLabel": "",
-    "mobModelName": "Modelland_walker",
-    "mobModelTexture": "land_walker.png",
+    "mobModelName": "Modelvoid_crawler",
+    "mobModelTexture": "void_crawler.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 1.0,
-    "modelHeight": 1.2,
-    "modelShadowSize": 0.7000000000000001,
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "modelShadowSize": 0.4,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -3355444,
+      "value": -13434829,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -3342592,
+      "value": -6711040,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:ConceptTab"
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -44,30 +44,30 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 0,
-    "attackKnockback": 0.0,
-    "knockbackResistance": 0.7999999999999999,
-    "movementSpeed": 0.15,
-    "armorBaseValue": 4.0,
+    "attackStrength": 3,
+    "attackKnockback": 0.30000000000000004,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.30000000000000004,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 25,
-    "xpAmount": 6,
+    "health": 10,
+    "xpAmount": 5,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
-    "ridable": true,
-    "canControlForward": true,
-    "canControlStrafe": true,
-    "immuneToFire": true,
-    "immuneToArrows": true,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
     "immuneToFallDamage": false,
-    "immuneToCactus": true,
-    "immuneToDrowning": true,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
@@ -77,19 +77,19 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Blocks.STONE#3"
+      "value": "Items.END_CRYSTAL"
     },
     "livingSound": {
-      "value": "entity.strider.ambient"
+      "value": ""
     },
     "hurtSound": {
-      "value": "entity.strider.hurt"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
       "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": "entity.strider.step"
+      "value": ""
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -100,7 +100,7 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"112\" y=\"21\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -113,7 +113,7 @@
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 1,
+    "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],
     "spawnInDungeons": false

@@ -25,6 +25,7 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -44,7 +45,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import com.github.mastrio.epicmod.itemgroup.EpicmodTabItemGroup;
+import com.github.mastrio.epicmod.itemgroup.ConceptTabItemGroup;
 import com.github.mastrio.epicmod.entity.renderer.LandWalkerRenderer;
 import com.github.mastrio.epicmod.EpicmodModElements;
 
@@ -52,7 +53,7 @@ import com.github.mastrio.epicmod.EpicmodModElements;
 public class LandWalkerEntity extends EpicmodModElements.ModElement {
 	public static EntityType entity = null;
 	public LandWalkerEntity(EpicmodModElements instance) {
-		super(instance, 2);
+		super(instance, 1);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new LandWalkerRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -64,7 +65,7 @@ public class LandWalkerEntity extends EpicmodModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(1f, 1.2f))
 						.build("land_walker").setRegistryName("land_walker");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -16724992, new Item.Properties().group(EpicmodTabItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -3355444, -3342592, new Item.Properties().group(ConceptTabItemGroup.tab))
 				.setRegistryName("land_walker_spawn_egg"));
 	}
 
@@ -83,9 +84,9 @@ public class LandWalkerEntity extends EpicmodModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.2);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 20);
-			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0.3);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.15);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 25);
+			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 4);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 0);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 0.7999999999999999);
 			event.put(entity, ammma.create());
@@ -150,6 +151,10 @@ public class LandWalkerEntity extends EpicmodModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof ArrowEntity)
+				return false;
+			if (source == DamageSource.CACTUS)
+				return false;
 			if (source == DamageSource.DROWN)
 				return false;
 			return super.attackEntityFrom(source, amount);

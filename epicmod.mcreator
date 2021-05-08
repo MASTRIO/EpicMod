@@ -4,7 +4,7 @@
     {
       "name": "EpicmodTab",
       "type": "tab",
-      "sortid": 1,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -13,11 +13,42 @@
     {
       "name": "LandWalker",
       "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "land_walker",
+      "path": "~/Concept"
+    },
+    {
+      "name": "Golerk",
+      "type": "mob",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "land_walker"
+      "registry_name": "golerk",
+      "path": "~/Concept"
+    },
+    {
+      "name": "ConceptTab",
+      "type": "tab",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "concept_tab",
+      "path": "~/Concept"
+    },
+    {
+      "name": "VoidCrawler",
+      "type": "mob",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_crawler",
+      "path": "~/Concept"
     }
   ],
   "variable_elements": [],
@@ -26,12 +57,26 @@
     "en_us": {
       "item.epicmod.land_walker_spawn_egg": "Land Walker Spawn Egg",
       "entity.epicmod.land_walker": "Land Walker",
-      "itemGroup.tabepicmod_tab": "Epicmod"
+      "item.epicmod.golerk_spawn_egg": "Golerk Spawn Egg",
+      "itemGroup.tabconcept_tab": "Epicmod - Concepts",
+      "entity.epicmod.void_crawler": "Void Crawler",
+      "itemGroup.tabepicmod_tab": "Epicmod",
+      "entity.epicmod.golerk": "Golerk",
+      "item.epicmod.void_crawler_spawn_egg": "Void Crawler Spawn Egg"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Concept",
+        "children": []
+      },
+      {
+        "name": "TheUnderneath",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "epicmod",

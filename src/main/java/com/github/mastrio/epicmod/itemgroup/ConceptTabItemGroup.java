@@ -11,18 +11,18 @@ import net.minecraft.block.Blocks;
 import com.github.mastrio.epicmod.EpicmodModElements;
 
 @EpicmodModElements.ModElement.Tag
-public class EpicmodTabItemGroup extends EpicmodModElements.ModElement {
-	public EpicmodTabItemGroup(EpicmodModElements instance) {
-		super(instance, 3);
+public class ConceptTabItemGroup extends EpicmodModElements.ModElement {
+	public ConceptTabItemGroup(EpicmodModElements instance) {
+		super(instance, 4);
 	}
 
 	@Override
 	public void initElements() {
-		tab = new ItemGroup("tabepicmod_tab") {
+		tab = new ItemGroup("tabconcept_tab") {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Blocks.DIAMOND_BLOCK, (int) (1));
+				return new ItemStack(Blocks.COMMAND_BLOCK, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)

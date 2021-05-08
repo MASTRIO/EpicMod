@@ -1,5 +1,10 @@
 {
   "item.epicmod.land_walker_spawn_egg": "Land Walker Spawn Egg",
   "entity.epicmod.land_walker": "Land Walker",
-  "itemGroup.tabepicmod_tab": "Epicmod"
+  "item.epicmod.golerk_spawn_egg": "Golerk Spawn Egg",
+  "itemGroup.tabconcept_tab": "Epicmod - Concepts",
+  "entity.epicmod.void_crawler": "Void Crawler",
+  "itemGroup.tabepicmod_tab": "Epicmod",
+  "entity.epicmod.golerk": "Golerk",
+  "item.epicmod.void_crawler_spawn_egg": "Void Crawler Spawn Egg"
 }
